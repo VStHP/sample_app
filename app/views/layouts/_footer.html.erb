@@ -1,0 +1,15 @@
+<footer class="footer">
+  <small>
+    <%= t "layout_page._footer.text1" %>
+    <a href="http://www.railstutorial.org/"><%= t "layout_page._footer.link1" %></a>
+    <%= t "layout_page._footer.text2" %>
+    <a href="http://www.michaelhartl.com/"><%= t "layout_page._footer.link2" %></a>
+  </small>
+  <nav>
+    <ul>
+      <li><%= link_to t("layout_page._footer.about"), about_path %></li>
+      <li><%= link_to t("layout_page._footer.contact"), contact_path %></li>
+      <li><a href="http://news.railstutorial.org/"><%= t "layout_page._footer.link3" %></a></li>
+    </ul>
+  </nav>
+</footer>
