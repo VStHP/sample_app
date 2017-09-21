@@ -55,6 +55,7 @@ en:
       signup: "Sign up now!"
       altlogo: "Rails logo"
       altkitten: "Kitten image"
+      flash_danger: "Can't find User!"
     help:
       title: "Help"
       intro: "Get help on the Ruby on Rails Tutorial at the"
@@ -81,4 +82,15 @@ en:
     new:
       title: "Sign up"
       text1: "This will be a signup page for new users."
+      confirmation: "Confirmation"
+      submit: "Create my account"
+    show:
+      flash_success: "Welcome to the Sample App!"
+      flash_danger: "Current don't exist this user id"
+  shared:
+    _error:
+      text1: "The form contains "
+      text2: "error"
+
+
 
