@@ -45,6 +45,11 @@ en:
       help: "Help"
       login: "Log in"
       sample: "sample app"
+      users: "Users"
+      profile: "Profile"
+      setting: "Settings"
+      logout: "Log out"
+      account: "Account"
   static_pages:
     home:
       title: "Home"
@@ -91,6 +96,12 @@ en:
     _error:
       text1: "The form contains "
       text2: "error"
+  sessions:
+    new:
+      title: "Log in"
+      newuser: "New User? "
+      signuplink: "Sign up now"
+      flash_danger: "Invalid email/password combination"
 
 
 
