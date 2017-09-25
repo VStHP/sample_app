@@ -4,4 +4,4 @@ user:
   email:
     maximum_length: 255
   password:
-    minimun_length: 6
+    minimum_length: 6
