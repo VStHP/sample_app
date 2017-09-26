@@ -6,4 +6,7 @@ user:
   password:
     minimum_length: 6
 session:
-  value_checkbox: 1
+  value_checkbox: "1"
+gravatar:
+  size_default: 150
+  size_user: 50
