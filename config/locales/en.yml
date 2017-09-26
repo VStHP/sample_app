@@ -102,6 +102,4 @@ en:
       newuser: "New User? "
       signuplink: "Sign up now"
       flash_danger: "Invalid email/password combination"
-
-
-
+      remember_login: "Remember me on this computer"
