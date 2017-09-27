@@ -112,13 +112,32 @@ en:
       title: "Log in"
       newuser: "New User? "
       signuplink: "Sign up now"
-      flash_danger: "Invalid email/password combination"
       remember_login: "Remember me on this computer"
+  user_mailer:
+    activation_html:
+      h1: "Sample App"
+      hi: "Hi "
+      text: "Welcome to the Sample App! Click on the link below to activate your account:"
+      link_to: "Activate"
   controllers:
     users:
+      flash_info_create: "Please check your email to activate your account."
       flash_success_create: "Welcome to the Sample App!"
       flash_success_update: "Update profile success"
       flash_danger_not_found: "I could'n find User!"
       flash_danger_not_login: "Please log in to access this page"
       flash_success_destroy: "Delete account success"
       flash_danger_destroy: "Delete account fail !!!"
+    account_activations:
+      flash_success: "Account activated!"
+      flash_danger: "Invalid activation link"
+    sessions:
+      message: "Account not activated. Check your email for the activation link."
+      flash_danger: "Invalid email/password combination"
+  mailers:
+    users:
+      account_activation:
+        subject: "Account activation"
+      password_reset:
+        greeting: "Hi"
+        to: "to@example.org"

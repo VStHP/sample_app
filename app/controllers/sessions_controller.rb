@@ -5,14 +5,23 @@ class SessionsController < ApplicationController
     params[:session][:remember_me] == Settings.session.value_checkbox ? remember(user) : forget(user)
   end
 
-  def create
-    user = User.find_by email: params[:session][:email].downcase
-    if user && user.authenticate(params[:session][:password])
+  def if_true user
+    if user.activated?
       log_in user
       remember_me_load user
       redirect_back_or user
     else
-      flash.now[:danger] = I18n.t "sessions.new.flash_danger"
+      flash[:warning] = t "controllers.sessions.message"
+      redirect_to root_url
+    end
+  end
+
+  def create
+    user = User.find_by email: params[:session][:email].downcase
+    if user && user.authenticate(params[:session][:password])
+      if_true user
+    else
+      flash.now[:danger] = t "controllers.sessions.flash_danger"
       render :new
     end
   end
