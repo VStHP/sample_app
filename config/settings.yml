@@ -5,8 +5,10 @@ user:
     maximum_length: 255
   password:
     minimum_length: 6
+  time_expire: 2
 session:
   value_checkbox: "1"
 gravatar:
   size_default: 150
   size_user: 50
+
