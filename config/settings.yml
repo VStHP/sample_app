@@ -11,4 +11,23 @@ session:
 gravatar:
   size_default: 150
   size_user: 50
+models:
+  micropost:
+    content_length_max: 140
+    pic_size: 5
+uploaders:
+  pic_up:
+    re_to_li: 400
+views:
+  microposts:
+    _micropost:
+      gravatar_size: 50
+  shared:
+    _micropost_form:
+      i5: 5
+      accept: "image/jpeg,image/gif,image/png"
+    _user_info:
+      i50: 50
+
+
 
