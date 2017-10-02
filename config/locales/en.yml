@@ -60,7 +60,7 @@ en:
       signup: "Sign up now!"
       altlogo: "Rails logo"
       altkitten: "Kitten image"
-      flash_danger:
+      feed: "Micropost Feed"
     help:
       title: "Help"
       intro: "Get help on the Ruby on Rails Tutorial at the"
@@ -107,6 +107,12 @@ en:
     _error:
       text1: "The form contains "
       text2: "error"
+    _micropost_form:
+      placeholder: "Compose new micropost..."
+      post: "Post"
+    _user_info:
+      view: "view my profile"
+      micropost: "micropost"
   sessions:
     new:
       title: "Log in"
@@ -135,6 +141,12 @@ en:
       text2: "This link will expire in two hours."
       text3: "If you did not request your password to be reset, please ignore this email and
       your password will stay as it is."
+  microposts:
+    _micropost:
+      delete: "delete"
+      sure: "You sure?"
+      posted: "Posted "
+      ago: " ago."
   controllers:
     users:
       flash_info_create: "Please check your email to activate your account."
@@ -156,9 +168,16 @@ en:
       error_pw: "can't be empty"
       flash_success_update: "Password has been reset."
       flash_danger_check_expiration: "Password reset has expired."
+    microposts:
+      flash_success_create: "Micropost created!"
+      flash_success_destroy: "Micropost deleted"
+      flash_danger_destroy: "Micropost can't deleted"
   mailers:
     users:
       account_activation:
         subject: "Account activation"
       password_reset:
         subject: "Password reset"
+  models:
+    micropost:
+      error_size: "should be less than 5MB"
