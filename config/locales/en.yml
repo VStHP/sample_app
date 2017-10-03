@@ -103,6 +103,13 @@ en:
       confirm: "You sure?"
     index:
       title: "All users"
+    follow:
+      follow: "Follow"
+    unfollow:
+      unfollow: "Unfollow"
+    show_follow:
+      link: "view my profile"
+      micro: "Microposts:"
   shared:
     _error:
       text1: "The form contains "
@@ -113,6 +120,9 @@ en:
     _user_info:
       view: "view my profile"
       micropost: "micropost"
+    _stats:
+      following: "following"
+      followers: "followers"
   sessions:
     new:
       title: "Log in"
@@ -172,6 +182,8 @@ en:
       flash_success_create: "Micropost created!"
       flash_success_destroy: "Micropost deleted"
       flash_danger_destroy: "Micropost can't deleted"
+    relationships:
+      flash_danger_find: "Sorry, something is wrong!"
   mailers:
     users:
       account_activation:
